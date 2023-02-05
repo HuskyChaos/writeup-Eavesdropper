@@ -13,8 +13,8 @@
     found and it's awesome. Link to his write is here => <a href="http://xyro.codes/THM/eavesdropper/writeup.html">xyro's writeup</a>
 </h4>
 
-<h4>Intended way :</h4>
 <h5>
+    <strong>Intended way :</strong>
     <ul>
         <li>
             <strong>Step 1 :</strong><br>
