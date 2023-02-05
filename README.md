@@ -48,9 +48,7 @@
                 <li>
                     <code>chmod +x /tmp/sudo</code>
                 </li>
-                <li>
-
-                </li>
+                
             </ol>
         </li>
     </ul>
