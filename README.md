@@ -23,8 +23,12 @@
         </li>
         <li>
             <strong>Step 2 :</strong><br>
-            Transfer <code>pspy</code> onto the target machine and run it for s while. you will find an intresting
+            Transfer <code>pspy</code> onto the target machine and run it for a while. You will find an intresting
             command being executed. <code>sudo cat /etc/shadow</code>
+        </li>
+        <li>
+            <strong>Step 3 :</strong><br>
+            Time for <a href="https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-hijacking">sudo hijacking</a>.
         </li>
     </ul>
 </h5>
