@@ -14,7 +14,7 @@
         href="http://xyro.codes/THM/eavesdropper/writeup.html">xyro's writeup</a>
 </h4>
 
-<h5>
+<p>
     <strong>Intended way :</strong>
     <ul>
         <li>
@@ -45,7 +45,13 @@
                     <code>read -s password</code> -- after executes the command, this will read the password and store it in the password variable. <code>-s</code> is used so that the input is not displayed. Something i'm used to do.<br>
                     <code>echo $password > /home/frank/pass.txt</code> -- echoing the password from password variable to pass.txt so that we can read it. <br>
                 </li>
+                <li>
+                    <code>chmod +x /tmp/sudo</code>
+                </li>
+                <li>
+
+                </li>
             </ol>
         </li>
     </ul>
-</h5>
+</p>
