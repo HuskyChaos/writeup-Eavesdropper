@@ -42,7 +42,7 @@
                 </li>
                 <li>content of sudo file <br>
                     <code>#!/bin/bash</code> -- I don't think i need to explain this. <br>
-                    <code>read -s password</code> -- after executes the command, this will read the password and store it in the password variable. <br>
+                    <code>read -s password</code> -- after executes the command, this will read the password and store it in the password variable. <code>-s</code> is used so that the input is not displayed. Something i'm used to do.<br>
                     <code>echo $password > /home/frank/pass.txt</code> -- echoing the password from password variable to pass.txt so that we can read it. <br>
                 </li>
             </ol>
