@@ -50,9 +50,15 @@
                 </li>
                 <li>
                     Modify you <code>$PATH</code> variable using <code>.bashrc</code> <br>
-                    <img src="./img/bashrc.png" alt="bashrc">
+                    <img src="./img/bashrc.png" alt="bashrc"> <br>
+                    Save the changes and wait for a few seconds after which you will see a pass.txt which has the password that can be used to switch to root.
                 </li>
             </ol>
         </li>
+        <li>
+            <strong>Step 4 :</strong><br>
+            Copy the password from pass.txt and do <code>sudo su</code> and get the root flag.
+        </li>
     </ul>
+    <h1>Solved 😁</h1>
 </p>
