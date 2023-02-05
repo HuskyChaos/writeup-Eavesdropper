@@ -28,7 +28,24 @@
         </li>
         <li>
             <strong>Step 3 :</strong><br>
-            Time for <a href="https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-hijacking">sudo hijacking</a>.
+            Time for <a href="https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-hijacking">sudo
+                hijacking</a>.
+            While creating our sudo executable, we have to be a little bit creative. Trying to get a reverse shell won't
+            work and even if it did, the command is using <code> sudo </code> which is not required by the root user so
+            the user executing that command does not have sudo privilege and you will get the same low privilege user
+            shell and for the same reason, anything that requires sudo privilege wont work like reading or editing
+            shadow file. So, what we can do here is to catch the password from the user after he runs the
+            <code>sudo cat /etc/shadow</code> command. Follow these steps to capture the password.
+            <ol>
+                <li>
+                    <code>touch /tmp/sudo</code> creating our own sudo executable.
+                </li>
+                <li>content of sudo file
+                    <code>#!/bin/bash</code> -- I don't think i need to explain this.
+                    <code>read -s password</code> -- after executes the command, this will read the password and store it in the password variable.
+                    <code>echo $password > /home/frank/pass.txt</code> -- echoing the password from password variable to pass.txt so that we can read it.
+                </li>
+            </ol>
         </li>
     </ul>
 </h5>
