@@ -14,11 +14,11 @@
 </h4>
 
 <h4>Intended way :</h4>
-<h3>
+<h5>
     <ul>
         <li>
             <strong>Step 1 :</strong><br>
             Log in to machine using the <code>idrsa.id-rsa</code> provided in task 1.
         </li>
     </ul>
-</h3>
+</h5>
