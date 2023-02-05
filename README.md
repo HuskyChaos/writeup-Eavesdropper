@@ -48,7 +48,10 @@
                 <li>
                     <code>chmod +x /tmp/sudo</code>
                 </li>
-                
+                <li>
+                    Modify you <code>$PATH</code> variable using <code>.bashrc</code> <br>
+                    <img src="./img/bashrc.png" alt="bashrc">
+                </li>
             </ol>
         </li>
     </ul>
