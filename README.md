@@ -69,7 +69,7 @@
     </h1>
     <p>
         Once you are done with this. <br> Make sure to ckeck out <a href="http://xyro.codes/THM/eavesdropper/writeup.html">xyro's writeup</a><br>
-        His method is super awesome 👍🏻.
+        His method is super awesome 👍🏻
     </p>
 
 </p>
