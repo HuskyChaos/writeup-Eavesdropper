@@ -35,7 +35,8 @@
             the user executing that command does not have sudo privilege and you will get the same low privilege user
             shell and for the same reason, anything that requires sudo privilege wont work like reading or editing
             shadow file. So, what we can do here is to catch the password from the user after he runs the
-            <code>sudo cat /etc/shadow</code> command. Follow these steps to capture the password.
+            <code>sudo cat /etc/shadow</code> command.<br>
+            Follow these steps to capture the password.
             <ol>
                 <li>
                     <code>touch /tmp/sudo</code> creating our own sudo executable.
