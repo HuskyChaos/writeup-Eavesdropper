@@ -1,4 +1,4 @@
-<h1>TryHackME - Eavesdropper</h1>
+<h1>TryHackMe - Eavesdropper</h1>
 <img src="./img/logo.png" alt="logo" width="500">
 <h4>
     There are two ways to solve this machine.
@@ -19,7 +19,7 @@
     <ul>
         <li>
             <strong>Step 1 :</strong><br>
-            Log in to machine using the <code>idrsa.id-rsa</code> provided in task 1 with username <code> frank </code>.
+            LogIn to the machine using <code>idrsa.id-rsa</code> provided in task 1 with username <code>frank</code>.
         </li>
         <li>
             <strong>Step 2 :</strong><br>
@@ -31,10 +31,10 @@
             Time for <a href="https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-hijacking">sudo
                 hijacking</a>.
             While creating our sudo executable, we have to be a little bit creative. Trying to get a reverse shell won't
-            work and even if it did, the command is using <code> sudo </code> which is not required by the root user so
+            work and even if it did, the command is using <code>sudo</code> which is not required by the root user so
             the user executing that command does not have sudo privilege and you will get the same low privilege user
             shell and for the same reason, anything that requires sudo privilege wont work like reading or editing
-            shadow file. So, what we can do here is to catch the password from the user after he runs the
+            shadow file. So, what we can do here is to catch the password from the user after he executes the
             <code>sudo cat /etc/shadow</code> command.<br>
             Follow these steps to capture the password.
             <ol>
