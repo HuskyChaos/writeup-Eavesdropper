@@ -12,3 +12,13 @@
     <code>xyro</code> who found an unintended way to solve this machine which is something very few people would have
     found and it's awesome. Link to his write is here => <a href="http://xyro.codes/THM/eavesdropper/writeup.html">xyro's writeup</a>
 </h4>
+
+<h4>Intended way :</h4>
+<h3>
+    <ul>
+        <li>
+            <strong>Step 1 :</strong><br>
+            Log in to machine using the <code>idrsa.id-rsa</code> provided in task 1.
+        </li>
+    </ul>
+</h3>
