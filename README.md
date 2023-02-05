@@ -58,7 +58,7 @@
         </li>
         <li>
             <strong>Step 4 :</strong><br>
-            Copy the password from pass.txt and do <code>sudo su</code> and get the root flag.
+            Copy the password from pass.txt and do <code>/usr/bin/sudo su</code> and get the root flag.
         </li>
     </ul>
     <h1>Solved 😁</h1>
