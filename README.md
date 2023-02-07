@@ -25,7 +25,7 @@ While creating our sudo executable, we have to be a little bit creative. Trying 
         ```
     3. `chmod +x /tmp/sudo`  
     4. Modify you `$PATH` variable using `.bashrc`  
-    [bashrc](./img/bashrc.png")  
+    ![bashrc](./img/bashrc.png")  
     Save the changes and wait for a few seconds after which you will see a pass.txt which has the password
     that can be used to switch to root.
 
