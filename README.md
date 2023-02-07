@@ -11,7 +11,10 @@ Room Link => [Eavesdropper](https://tryhackme.com/room/eavesdropper)
 1. LogIn to the machine using `idrsa.id-rsa` provided in task 1 with username `frank`  
 2. Transfer <code>pspy</code> onto the target machine and run it for a while.  
 There are a few things we notice.  
-User frank is logging in via ssh and then running the command `sudo cat /etc/shadow` We can perform <code>sudo hijacking</code> on this.
+User frank is logging in via ssh and then running the command `sudo cat /etc/shadow` We can perform <code>sudo hijacking</code> on this.  
+3. Time for [sudo hijacking](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-hijacking)  
+While creating our sudo executable, we have to be a little bit creative. Trying to get a reverse shell won't be useful. If u hijack sudo so that it spawns a reverse shell instead, the reverse shell u get back would be of the frank user because the sudo elevation hasn't happened yet. Instead we can capture the password entered by frank using a little bit of shell scripting. (Thanks you xyro for these words 😁).  
+Follow these steps to capture the password using our sudo executable.
 <p>
     <strong>Intended way :</strong>
     <ul>
