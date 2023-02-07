@@ -28,7 +28,7 @@ While creating our sudo executable, we have to be a little bit creative. Trying 
     ![bashrc](./img/bashrc.png)  
     Save the changes and wait for a few seconds after which you will see a pass.txt which has the password
     that can be used to switch to root.  
-4. Copy the password from pass.txt and do `/usr/bin/sudo su` and get the root flag.
+4. Copy the password from pass.txt and do `/usr/bin/sudo su` and get the root flag. We can also reset the `PATH` variable instead of using the absolute path for the original sudo executable.
 
 ## Solved 😁
 Once you are done with this.  
