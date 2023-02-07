@@ -5,12 +5,9 @@ Room Link => [Eavesdropper](https://tryhackme.com/room/eavesdropper)
 - Intended Way  
 - Unintended Way  
 
-<h4>
-    You can follow the steps below to solve it using the intended way or you can check out another writeup by
-    <code>xyro</code> who found an unintended way to solve this machine which is something very few people would have
-    found and his approach to solve this machine is also unique. Link to his write is here => <a
-        href="http://xyro.codes/THM/eavesdropper/writeup.html">xyro's writeup</a>
-</h4>
+#### You can follow the steps below to solve it using the intended way or you can check out another writeup by  
+    `xyro` who found an unintended way to solve this machine which is something very few people would have  
+    found and his approach to solve this machine is also unique. Link to his write is here => [Xyro's Writeup](http://xyro.codes/THM/eavesdropper/writeup.html)
 
 <p>
     <strong>Intended way :</strong>
