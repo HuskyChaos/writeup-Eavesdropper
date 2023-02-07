@@ -9,6 +9,7 @@ Room Link => [Eavesdropper](https://tryhackme.com/room/eavesdropper)
 
 ## Intended way :
 1. LogIn to the machine using `idrsa.id-rsa` provided in task 1 with username `frank`  
+2. Transfer <code>pspy</code> onto the target machine and run it for a while.  There are a few things we notice.  User frank is logging in via ssh and then running the command `sudo cat /etc/shadow` We can perform <code>sudo hijacking</code> on this.
 <p>
     <strong>Intended way :</strong>
     <ul>
