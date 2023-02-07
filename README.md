@@ -24,8 +24,10 @@
         </li>
         <li>
             <strong>Step 2 :</strong><br>
-            Transfer <code>pspy</code> onto the target machine and run it for a while. You will find an intresting
-            command being executed. <code>sudo cat /etc/shadow</code>
+            Transfer <code>pspy</code> onto the target machine and run it for a while.<br>
+            There are a few things we notice.<br>
+            User frank is logging in via ssh and then running the command <code>sudo cat /etc/shadow</code><br>
+            We can perform <code>sudo hijacking</code> on this.
         </li>
         <li>
             <strong>Step 3 :</strong><br>
@@ -34,19 +36,18 @@
             While creating our sudo executable, we have to be a little bit creative. Trying to get a reverse shell won't
             be useful. If u hijack sudo so that it spawns a reverse shell instead, the reverse shell u get back would be of
             the frank user because the sudo elevation hasn't happened yet. Instead we can capture the password entered by
-            frank using a little bit of shell scripting. (Thanks you xyro for these words 😁).
-            <code>sudo cat /etc/shadow</code> command.<br>
-            Follow these steps to capture the password.
+            frank using a little bit of shell scripting. (Thanks you xyro for these words 😁).<br>
+            Follow these steps to capture the password using our sudo executable.
             <ol>
                 <li>
                     <code>touch /tmp/sudo</code> creating our own sudo executable.
                 </li>
                 <li>content of sudo file <br>
                     <code>#!/bin/bash</code> -- I don't think i need to explain this. <br>
-                    <code>read -s password</code> -- after executes the command, this will read the password and store it in
-                    the password variable. <code>-s</code> is used so that the input is not displayed. Something i'm used to
-                    do.<br>
-                    <code>echo $password > /home/frank/pass.txt</code> -- echoing the password from password variable to
+                    <code>read -s pass</code> -- after executes the command, this will read the password entered by frank and store it in
+                    the pass variable. <code>-s</code> is used so that the input is not displayed. Something i'm used to
+                    do which you can ignore.<br>
+                    <code>echo $pass > /home/frank/pass.txt</code> -- echoing the password from pass variable to
                     pass.txt so that we can read it once catured. <br>
                 </li>
                 <li>
