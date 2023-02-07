@@ -1,13 +1,10 @@
 # TryHackMe - Eavesdropper
 ![Room Logo](./img/logo.png)  
 Room Link => [Eavesdropper](https://tryhackme.com/room/eavesdropper)  
-<h4>
-    There are two ways to solve this machine.
-    <ol>
-        <li>Intended Way</li>
-        <li>Unintended Way</li>
-    </ol>
-</h4>
+#### There are two ways to solve this machine.
+- Intended Way  
+- Unintended Way  
+
 <h4>
     You can follow the steps below to solve it using the intended way or you can check out another writeup by
     <code>xyro</code> who found an unintended way to solve this machine which is something very few people would have
